@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mana spēle</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  max-width: 680px;
+  margin: 24px auto;
+  padding: 16px;
+  line-height: 1.6;
+  background-color: #14251b;
+  color: #f3f4e8;
+}
+h1 {
+  color: #b8e986;
+  font-size: 36px;
+  text-align: center;
+}
+.noteikumi {
+  background-color: #263b2d;
+  color: #f3f4e8;
+  padding: 16px;
+  border-radius: 12px;
+}
+.noteikumi h2 {
+  font-size: 16px;
+  margin: 8px 0;
+}
+.apraksts {
+  font-size: 20px;
+  text-align: center;
+}
+.laukums, #laukums {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 3px solid #b8e986;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: center;
+}
+button, input { font: inherit; padding: 10px; margin: 4px; }
+button {
+  cursor: pointer;
+  background-color: #f2a541;
+  color: #14251b;
+  border-radius: 8px;
+}
+img { max-width: 100%; height: auto; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<h1>99 naktis mežā</h1>
+<p class="apraksts">Savāc resursus un izdzīvo nakti.</p>
+<section id="sakums">
+  <div class="noteikumi">
+  <h2>Nedrīkst zagt citu resursus</h2>
+  <h2>Nedrīkst mēģināt galināt briesmoni</h2>
+  <h2>Ja nomirsti, nedrīkst mēģināt dabūt resursus atpakaļ</h2>
+  </div>
+  <button onclick="paraditSpeli()">Sākt spēli</button>
+</section>
+<section id="laukums" hidden>
+  <h2>Spēles ekrāns</h2>
+  <p>Resursi: 0</p>
+  <p>Tu esi apmaldījies mežā, esi gatavs visam, kas Tevi sagaidīs naktī!</p>
+  <button onclick="paraditSakumu()">Atpakaļ</button>
+</section>
+<script>
+// Gatavā palīdzība pogām. Šodien maini lapas tekstu un izvietojumu.
+function paraditSpeli() {
+  document.getElementById("sakums").hidden = true;
+  document.getElementById("laukums").hidden = false;
+}
+function paraditSakumu() {
+  document.getElementById("sakums").hidden = false;
+  document.getElementById("laukums").hidden = true;
+}
+</script>
+</body>
+</html>

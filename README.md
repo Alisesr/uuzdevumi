@@ -6,9 +6,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mana spēle</title>
 <style>
-body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
+body {
+  font-family: Arial, sans-serif;
+  max-width: 680px;
+  margin: 24px auto;
+  padding: 16px;
+  line-height: 1.6;
+  background-color: #14251b;
+  color: #f3f4e8;
+}
+h1 {
+  color: #b8e986;
+  font-size: 36px;
+  text-align: center;
+}
+.noteikumi {
+  background-color: #263b2d;
+  color: #f3f4e8;
+  padding: 16px;
+  border-radius: 12px;
+}
+.laukums, #laukums {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 3px solid #b8e986;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: center;
+}
 button, input { font: inherit; padding: 10px; margin: 4px; }
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+  background-color: #f2a541;
+  color: #14251b;
+  border-radius: 8px;
+}
 img { max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
 

@@ -1,0 +1,23 @@
+# 99 naktis mežā
+
+## Par spēli
+Spēlē **99 naktis mežā** spēlētājs vāc resursus un sastopas ar noslēpumainu briesmoni. Nospiežot pogu **“Iegūt resursu!”**, resursu skaits palielinās par vienu.
+
+## Kā atvērt spēli
+Atver projekta mapē failu `index.html` ar interneta pārlūku.
+
+## Projekta faili
+- `index.html` — spēles lapa, tās noformējums un resursu skaitītājs.
+- `atteli/varonis.png` — briesmoņa attēls.
+- `skanas/klikskis.wav` — briesmoņa skaņas fails.
+
+## Dizains un krāsas
+- Tumši zaļais lapas fons (`#14241b`) rada tumšā meža noskaņu, bet gaišais pamatteksts (`#f1f5ee`) ir viegli salasāms.
+- Virsraksts ir zeltainā krāsā (`#f4c95d`), lai tas izceltos uz tumšā fona.
+- Spēles laukumam ir tumšāks zaļš fons (`#213a2d`) un zeltaina, pārtraukta mala.
+- Poga ir oranža (`#e58b36`) ar tumšu tekstu, lai to būtu viegli pamanīt.
+- Spēles laukums ir centrēts, un tā izmērs pielāgojas pārlūka loga platumam.
+
+## Spēles darbība
+Spēles laukumā redzams briesmoņa attēls, skaņas atskaņotājs, resursu skaitītājs un poga. Sākumā skaitītājs rāda `Resursi: 0`; katrs pogas klikšķis palielina resursu skaitu par vienu.
+Klasesbiedram ļoti patīk!
